@@ -1,8 +1,7 @@
 package sorting;
 
-import java.util.Arrays;
-
 public class MergeSort {
+
     public int[] mergeSort(int[] arr, int[] helper, int low, int high) {
         if(low < high) {
             int midPoint = (low + high) / 2;
