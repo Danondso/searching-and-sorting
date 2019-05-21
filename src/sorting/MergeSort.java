@@ -2,7 +2,7 @@ package sorting;
 
 public class MergeSort {
 
-    public int[] mergeSort(int[] arr, int[] helper, int low, int high) {
+    public static int[] mergeSort(int[] arr, int[] helper, int low, int high) {
         if(low < high) {
             int midPoint = (low + high) / 2;
             mergeSort(arr, helper, low, midPoint);
@@ -12,7 +12,8 @@ public class MergeSort {
         return arr;
     }
 
-    private void merge(int[] array, int[] helper, int low, int middle, int high){
+    //TODO get a better sense of the merging; fill this out with your notes.
+    private static void merge(int[] array, int[] helper, int low, int middle, int high){
 
         for(int i = low; i <= high; i++) {
             helper[i] = array[i];

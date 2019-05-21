@@ -2,7 +2,7 @@ package misc;
 
 //Runs in O(n) time with O(1) complexity; such wow
 public class FizzBuzz {
-    public void fizzBuzz(int value1, int value2, int size) {
+    public static void fizzBuzz(int value1, int value2, int size) {
         for(int i = 1; i <= size; i++) {
             if(i % value1 == 0 && i % value2 == 0){
                 System.out.println("FizzBuzz");
