@@ -5,7 +5,8 @@ import static sorting.SortUtil.swap;
 public class BubbleSort {
 
     /*
-     * Basic bubble sorting
+     * Basic bubble sorting: for each i in the array, swap if the value of the array at index j is less than.
+     * We're breaking this early so we can avoid having to run through the array needlessly.
      * Time Complexity: O(n^2)
      * Space Complexity: O(1)
      * */

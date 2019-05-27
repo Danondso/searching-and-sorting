@@ -4,6 +4,8 @@ import static sorting.SortUtil.swap;
 
 public class SelectionSort {
 
+    //takes a sub array of the values for each i iteration and finds the minimum, then swaps once a minimum index has been found
+    //Time complexity O(n^2), O(n) if already sorted. Space complexity is O(1).
     public static int[] selectionSort(int[] arr) {
         int length = arr.length;
         for(int i = 0; i < arr.length - 1; i++) {
